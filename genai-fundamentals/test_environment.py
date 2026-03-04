@@ -56,7 +56,7 @@ class TestEnvironment(unittest.TestCase):
             models,
             "OpenAI connection failed. Check the OPENAI_API_KEY key in .env file.")
 
-def test_neo4j_connection(self):
+    def test_neo4j_connection(self):
 
         msg = "Neo4j connection failed. Check the NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD, NEO4j_DATABASE values in .env file."
         connected = False
